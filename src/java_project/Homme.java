@@ -24,88 +24,139 @@ import java.util.ArrayList;
  *
  * @author adala
  */
-public class Homme extends Personne {
-    int charisme;
-    String morphologie;
-    Boolean aLepermis ;
-    int humour; 
+public abstract class Homme extends Personne {
+    Boolean isCharismatic;
+    Boolean isMuscled;
+    Boolean  isFat;
+    Boolean drivingLicense ;
+    Boolean isBeautiful;
+    Boolean isFunny; 
     int id; // un moyen de faire une recherche, ou s'authentifier 
+    String[] stage1Phrases;
+    String[] stage2Phrases;
+    String[] stage3Phrases;
+    String[] stage4Phrases;
+    
     
     //__________________________________________________________________
-    public Homme(){
-        super();
-    }
     //constructeur avec parametre
-    public Homme(String nom, String prenom, int age, int charisme,int humour, String preference,String interet){
-        super(nom, prenom, age, preference,interet);
-        this.charisme = charisme;
-        this.humour = humour;
+    
+    
+
+    public Boolean getIsCharismatic() {
+        return isCharismatic;
     }
 
-    public int getCharisme() {
-        return charisme;
+    public void setIsCharismatic(Boolean isCharismatic) {
+        this.isCharismatic = isCharismatic;
     }
 
-    public String getMorphologie() {
-        return morphologie;
+    public Boolean getIsMuscled() {
+        return isMuscled;
     }
 
-    public Boolean getaLepermis() {
-        return aLepermis;
+    public void setIsMuscled(Boolean isMuscled) {
+        this.isMuscled = isMuscled;
     }
 
-    public int getHumour() {
-        return humour;
+    public Boolean getIsFat() {
+        return isFat;
     }
 
-    public void setCharisme(int charisme) {
-        this.charisme = charisme;
+    public void setIsFat(Boolean isFat) {
+        this.isFat = isFat;
     }
 
-    public void setMorphologie(String morphologie) {
-        this.morphologie = morphologie;
+    public Boolean getDrivingLicense() {
+        return drivingLicense;
     }
 
-    public void setaLepermis(Boolean aLepermis) {
-        this.aLepermis = aLepermis;
+    public void setDrivingLicense(Boolean drivingLicense) {
+        this.drivingLicense = drivingLicense;
     }
 
-    public void setHumour(int humour) {
-        this.humour = humour;
+    public Boolean getIsBeautiful() {
+        return isBeautiful;
     }
+
+    public void setIsBeautiful(Boolean isBeautiful) {
+        this.isBeautiful = isBeautiful;
+    }
+
+    public Boolean getIsFunny() {
+        return isFunny;
+    }
+
+    public void setIsFunny(Boolean isFunny) {
+        this.isFunny = isFunny;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+
     //____________________________________________________________________________
     
-    public void inscriptionMan(){
+   /* public void inscriptionMan(){
         System.out.println("Votre nom: ");
         Scanner clavier = new Scanner(System.in);
-        nom = clavier.nextLine();
+        name = clavier.nextLine();
         System.out.println("Votre prenom: ");
-        prenom = clavier.nextLine();
+        firstName = clavier.nextLine();
         System.out.println("Votre age: ");
         age = clavier.nextInt();
         System.out.println("Vous etes a la recherche d'un homme ou d'une femme ? ");
-        preference = clavier.nextLine();
-        System.out.println("Vtre charisme ( de 1 a 10) ? ");
-        charisme = clavier.nextInt();
-       // Homme(nom,prenom,age,charisme,humour,preference);
-        System.out.println(nom);
+        preferences = clavier.nextLine();
+        System.out.println("Vtre isCharismatic ( de 1 a 10) ? ");
+        isCharismatic = clavier.nextBoolean();
+       // Homme(nom,prenom,age,isCharismatic,humour,preference);
+        System.out.println(name);
        
-    } // pas utilisé
+    } // pas utilisé */
+    
+    public void settingStage1(String[] phrase) {
+        
+       
+    
+    }
+    
+    public void settingStage2(String[] phrase) {
+        
+       
+    
+    }
+    
+    public void settingStage3(String[] phrase) {
+        
+       
+    
+    }
+    
+    public void settingStage4(String[] phrase) {
+        
+       
+    
+    }
     
     @Override
     public String presentation(){
-        return super.presentation()+"\nJ'ai un humour de "+this.humour+" et un charisme de "+this.charisme;
+        return super.presentation()+"\nJ'ai un humour de "+" et un isCharismatic de "+this.isCharismatic;
         //return phr;
     }
     
-    public void ecriture(String nom, String prenom, int age, int charisme,int humour, String preference, String interet) throws IOException {
+    public void ecriture(String nom, String prenom, int age, int isCharismatic,int humour, String preference, String interet) throws IOException {
         //ecriture dans un fichiers txt. reflechir comment mettre en parametre apre juste l'objet, pour avoir un truc global
         // pour homme et femme. et ecriture dans deux fichiers differents selon le sexe. a voir, pas obligatoire
         FileWriter out = null;
        try {
         
         out = new FileWriter ("hommes.txt",true); // mode ajout
-        out.write(nom+"\t"+prenom+"\t"+String.valueOf(age)+"\t"+String.valueOf(charisme)+"\t"+String.valueOf(humour)+"\t"+preference+"\t"+interet);
+        out.write(nom+"\t"+prenom+"\t"+String.valueOf(age)+"\t"+String.valueOf(isCharismatic)+"\t"+String.valueOf(humour)+"\t"+preference+"\t"+interet);
         
         out.write("\n");
         System.out.println("------writen-------");
@@ -130,7 +181,7 @@ public class Homme extends Personne {
        
        ArrayList listnom = new ArrayList();
        ArrayList listprenom = new ArrayList();
-       ArrayList listcharisme = new ArrayList();
+       ArrayList listisCharismatic = new ArrayList();
        ArrayList listage = new ArrayList();
        ArrayList listhumour = new ArrayList();
        ArrayList listpreference = new ArrayList();
@@ -159,7 +210,7 @@ public class Homme extends Personne {
           listnom.add(str[0]);
           listprenom.add(str[1]);
           listage.add(str[2]);
-          listcharisme.add(str[3]);
+          listisCharismatic.add(str[3]);
           listhumour.add(str[4]);
           listpreference.add(str[5]); 
           listinteret.add(str[6]);

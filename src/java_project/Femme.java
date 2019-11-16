@@ -24,49 +24,68 @@ import java.util.logging.Logger;
  *
  * @author adala
  */
-public class Femme extends Personne {
+public abstract class Femme extends Personne {
     
-    int kitchenSkilz;
-    int feminite;
+    boolean isCooker;
+    boolean isPretty;
+    boolean isClean;
+    boolean isFeminist;
+    boolean isVegan;
 
-    public void setKitchenSkilz(int kitchenSkilz) {
-        this.kitchenSkilz = kitchenSkilz;
-    }
-
-    public void setFeminite(int feminite) {
-        this.feminite = feminite;
-    }
-    
-    public Femme(){
-        super();
-    }
-    
-    public Femme(String nom, String prenom, int age, int kitchenSkilz , String preference,String interet){
-        super(nom, prenom, age, preference,interet);
-        this.kitchenSkilz = kitchenSkilz;
+    public boolean isIsCooker() {
+        return isCooker;
     }
 
-    public int getKitchenSkilz() {
-        return kitchenSkilz;
+    public void setIsCooker(boolean isCooker) {
+        this.isCooker = isCooker;
     }
 
-    public int getFeminite() {
-        return feminite;
+    public boolean isIsPretty() {
+        return isPretty;
     }
-    
+
+    public void setIsPretty(boolean isPretty) {
+        this.isPretty = isPretty;
+    }
+
+    public boolean isIsClean() {
+        return isClean;
+    }
+
+    public void setIsClean(boolean isClean) {
+        this.isClean = isClean;
+    }
+
+    public boolean isIsFeminist() {
+        return isFeminist;
+    }
+
+    public void setIsFeminist(boolean isFeminist) {
+        this.isFeminist = isFeminist;
+    }
+
+    public boolean isIsVegan() {
+        return isVegan;
+    }
+
+    public void setIsVegan(boolean isVegan) {
+        this.isVegan = isVegan;
+    }
+
+
      public String presentation(){
-        return super.presentation()+"\nEn cuisine je dirais que je me situe plutot a "+this.kitchenSkilz+"/100";
+        return super.presentation()+"\nEn cuisine je dirais que je me situe plutot a "+this.isCooker+"/100";
         //return phr;
     }
     
-    public void ecriture(String nom, String prenom, int age,int kitchenSkilz, String preference, String interet) throws IOException{
+    public void ecriture(String nom, String prenom, int age,int isCooker, String preference, String interet) throws IOException{
                //ecriture dans un fichiers txt. reflechir comment mettre en parametre apre juste l'objet, pour avoir un truc global
         // pour homme et femme. et ecriture dans deux fichiers differents selon le sexe. a voir, pas obligatoire
         FileWriter out = null;
        try {
         
         out = new FileWriter ("femmes.txt",true); // mode ajout
-        out.write(nom+"\t"+prenom+"\t"+String.valueOf(age)+"\t"+String.valueOf(kitchenSkilz)+"\t"+"\t"+preference+"\t"+interet);
+        out.write(nom+"\t"+prenom+"\t"+String.valueOf(age)+"\t"+String.valueOf(isCooker)+"\t"+"\t"+preference+"\t"+interet);
         
         out.write("\n");
         System.out.println("------writen-------");
@@ -93,7 +112,7 @@ public class Femme extends Personne {
        ArrayList listprenom = new ArrayList();
        ArrayList listcharisme = new ArrayList();
        ArrayList listage = new ArrayList();
-       ArrayList listkitchenSkilz = new ArrayList();
+       ArrayList listisCooker = new ArrayList();
        ArrayList listpreference = new ArrayList();
        ArrayList listinteret = new ArrayList();
        int taille = listnom.size();
@@ -120,7 +139,7 @@ public class Femme extends Personne {
           listnom.add(str[0]);
           listprenom.add(str[1]);
           listage.add(str[2]);
-          listkitchenSkilz.add(str[3]);
+          listisCooker.add(str[3]);
           listpreference.add(str[4]); 
           listinteret.add(str[5]);
           

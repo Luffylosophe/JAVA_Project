@@ -11,8 +11,12 @@ package java_project;
  */
 public class Rdv {
     
-String heureDate;
+ String heure, date ;
 String[] participants;
-Boolean disponibilite;
+Boolean isAvailable;
     
 }
+
+
+
+

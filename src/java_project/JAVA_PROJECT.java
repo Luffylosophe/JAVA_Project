@@ -16,6 +16,8 @@ public class JAVA_PROJECT {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Personne test = new Personne();
+        System.out.println("My firstName is : "+test.firstName);
     }
     
 }

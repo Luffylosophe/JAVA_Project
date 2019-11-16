@@ -9,12 +9,6 @@ package java_project;
  *
  * @author MBANZA Lionel
  */
-public class Lieu {
-    
-    String name;
-    boolean isClean;
-    boolean isCrowded;
-    String[] food;
-    int[] price;
+public class BadBoy extends Homme {
     
 }

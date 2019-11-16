@@ -11,28 +11,28 @@ package java_project;
  */
 public class Personne {
     
-  String nom;
-  String prenom;
-  int age;
-  String preference;
-  String tentatives, interet;
+  protected String name;
+  protected String firstName;
+  protected int age;
   int satisfaction;
-  
+  protected String preferences;
+  protected String interest;
+  int attempts;
   
    public Personne(){
         System.out.println("Nouvelle personne");
-        nom = "ADOTEVI";
-        prenom = "Alan";
+        name = "ADOTEVI";
+        firstName = "Alan";
         age = 23;
         
     }
-     public Personne(String nom, String prenom, int age, String preference, String interet){
+     public Personne(String name, String firstName, int age, String preferences, String interest){
         System.out.println("Nouvelle personne");
-        this.nom = nom;
-        this.prenom = prenom;
+        this.name = name;
+        this.firstName = firstName;
         this.age = age;
-        this.preference = preference;
-        this.interet = interet;
+        this.preferences = preferences;
+        this.interest = interest;
         
     }
 
@@ -41,21 +41,21 @@ public class Personne {
     // Getter et Setter __________________________________________________________
 
     public String getNom() {
-        return nom;
+        return name;
     }
     public String getPreference() {
-        return preference;
+        return preferences;
     }
        public void setInteret(String interet) {
-        this.interet = interet;
+        this.interest = interet;
     }
 
     public String getInteret() {
-        return interet;
+        return interest;
     }
 
     public String getPrenom() {
-        return prenom;
+        return firstName;
     }
 
     public int getAge() {
@@ -66,20 +66,20 @@ public class Personne {
         return satisfaction;
     }
 
-    public String getTentatives() {
-        return tentatives;
+    public int getAttempts() {
+        return attempts;
     }
 
-    public void setNom(String nom) {
-        this.nom = nom;
+    public void setNom(String name) {
+        this.name = name;
     }
     
      public void setPreference(String preference) {
-        this.preference = preference;
+        this.preferences = preference;
     }
 
     public void setPrenom(String prenom) {
-        this.prenom = prenom;
+        this.firstName = prenom;
     }
 
     public void setAge(int age) {
@@ -90,14 +90,14 @@ public class Personne {
         this.satisfaction = satisfaction;
     }
 
-    public void setTentatives(String tentatives) {
-        this.tentatives = tentatives;
+    public void setAttempts(int attempts) {
+        this.attempts = attempts;
     }
     //____________________________________________________________________
     
      //Retourne la description de la personne
   public String presentation(){ // on pourra modifier comment la personne se presente apres 
-    return "Bonjour, je m'appelle "+this.nom+" "+this.prenom+", j'ai "+this.age+" ans. J'ai plutot une preference pour les "+this.preference+".Mes centres d'interets sont :"+this.interet ;
+    return "Bonjour, je m'appelle "+this.name+" "+this.firstName+", j'ai "+this.age+" ans. J'ai plutot une preference pour les "+this.preferences+".Mes centres d'interets sont :"+this.interest ;
   }
   
 }
