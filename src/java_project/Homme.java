@@ -148,17 +148,17 @@ public abstract class Homme extends Personne {
     }
     
     public void settingStage2(String[] stage2Phrases) {
-        stage2Phrases[0] = "(1)	Yes Allo, so how was your day ? ";
-        stage2Phrases[1] = "(2)	Yo sorry who’s this again ? ";
-        stage2Phrases[2] = "(3)	Yo wassup ? Can I call you later there is a friend calling me";
+        stage2Phrases[0] = "(1) Oui Allo, alors comment était ta journée ";
+        stage2Phrases[1] = "(2)	Oui allo, désolé mais qui est ce déjà ? ";
+        stage2Phrases[2] = "(3)	Ouais salut, je te rappelle j'ai une amie qui m'appelle la ";
         
-        stage2Phrases[3] = "(1)	Damn girl I saw some fine ass today at the mall ";
-        stage2Phrases[4] = "(2)	I went to work today, and did some groceries.";
-        stage2Phrases[5] = "(3)	Oh you know, nothing great today, chilling in bed, videos games";
+        stage2Phrases[3] = "(1)	Wow meuf, j'ai vu de ces fessiers auj au centre commercial ";
+        stage2Phrases[4] = "(2)	Je suis allé bosser aujourd'hui, et fais quelques courses.";
+        stage2Phrases[5] = "(3)	Oh tu sais rein de ouf, fumé tranquille chez moi au lit, jeux vidéos";
         
-        stage2Phrases[6] = "(1)	You’re kinda boring at phone, wanna meet ?";
-        stage2Phrases[7] = "(2)	Your voice reminds me my uncle’s, so raw";
-        stage2Phrases[8] = "(3)	I like talking to you, you have a nice voice";
+        stage2Phrases[6] = "(1)T'es plutôt ennuyante au téléphone, tu veux pas qu'on se voit plutôt ?";
+        stage2Phrases[7] = "(2)'Tain ta voix me rappelle celle de mon grand père, bien grave. C'es chaud";
+        stage2Phrases[8] = "(3)	J'aime bien t'entendre et discuter avec toi, j'espere te voir bientot.";
         
        
     
