@@ -40,7 +40,15 @@ public abstract class Homme extends Personne {
     
     //__________________________________________________________________
     //constructeur avec parametre
-    
+    public Homme ( String[] stage1Phrases , String[]  stage2Phrases ,String[]  stage3Phrases , String[] stage4Phrases )
+    {
+        stage1Phrases = new String[8];
+        stage2Phrases = new String[8];
+        stage3Phrases = new String[8];
+        stage4Phrases = new String[8];
+    }
+            
+           
     
 
     public Boolean getIsCharismatic() {
@@ -119,25 +127,59 @@ public abstract class Homme extends Personne {
        
     } // pas utilisé */
     
-    public void settingStage1(String[] phrase) {
+    public void settingStage1(String[] stage1Phrases) {
+        stage1Phrases[0] = "Hé mademoiselle t'es charmante, t'a un 06 ?";
+        stage1Phrases[0] = "";
+        stage1Phrases[0] = "";
+        
+        stage1Phrases[0] = "";
+        stage1Phrases[0] = "";
+        stage1Phrases[0] = "";
+        
+        stage1Phrases[0] = "";
+        stage1Phrases[0] = "";
+        stage1Phrases[0] = "";
+            
+       
+    
+    }
+    
+    public void settingStage2(String[] stage2Phrases) {
+        stage2Phrases[0] = "";
+        stage2Phrases[0] = "";
+        stage2Phrases[0] = "";
+        
+        stage2Phrases[0] = "";
+        stage2Phrases[0] = "";
+        stage2Phrases[0] = "";
+        
+        stage2Phrases[0] = "";
+        stage2Phrases[0] = "";
+        stage2Phrases[0] = "";
         
        
     
     }
     
-    public void settingStage2(String[] phrase) {
+    public void settingStage3(String[] stage3Phrases) {
+        
+        stage3Phrases[0] = "";
+        stage3Phrases[0] = "";
+        stage3Phrases[0] = "";
+        
+        stage3Phrases[0] = "";
+        stage3Phrases[0] = "";
+        stage3Phrases[0] = "";
+        
+        stage3Phrases[0] = "";
+        stage3Phrases[0] = "";
+        stage3Phrases[0] = "";
         
        
     
     }
     
-    public void settingStage3(String[] phrase) {
-        
-       
-    
-    }
-    
-    public void settingStage4(String[] phrase) {
+    public void settingStage4(String[] stage4Phrases) {
         
        
     
