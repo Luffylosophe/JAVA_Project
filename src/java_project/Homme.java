@@ -37,6 +37,9 @@ public abstract class Homme extends Personne {
     String[] stage3Phrases;
     String[] stage4Phrases;
     
+    public Homme (){
+        //super();
+    }
     
     //__________________________________________________________________
     //constructeur avec parametre
@@ -145,17 +148,17 @@ public abstract class Homme extends Personne {
     }
     
     public void settingStage2(String[] stage2Phrases) {
-        stage2Phrases[0] = "";
-        stage2Phrases[0] = "";
-        stage2Phrases[0] = "";
+        stage2Phrases[0] = "(1)	Yes Allo, so how was your day ? ";
+        stage2Phrases[1] = "(2)	Yo sorry who’s this again ? ";
+        stage2Phrases[2] = "(3)	Yo wassup ? Can I call you later there is a friend calling me";
         
-        stage2Phrases[0] = "";
-        stage2Phrases[0] = "";
-        stage2Phrases[0] = "";
+        stage2Phrases[3] = "(1)	Damn girl I saw some fine ass today at the mall ";
+        stage2Phrases[4] = "(2)	I went to work today, and did some groceries.";
+        stage2Phrases[5] = "(3)	Oh you know, nothing great today, chilling in bed, videos games";
         
-        stage2Phrases[0] = "";
-        stage2Phrases[0] = "";
-        stage2Phrases[0] = "";
+        stage2Phrases[6] = "(1)	You’re kinda boring at phone, wanna meet ?";
+        stage2Phrases[7] = "(2)	Your voice reminds me my uncle’s, so raw";
+        stage2Phrases[8] = "(3)	I like talking to you, you have a nice voice";
         
        
     
