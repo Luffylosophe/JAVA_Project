@@ -11,4 +11,11 @@ package java_project;
  */
 public class GoodBoy extends Homme {
     
+    public GoodBoy() {
+        
+    }
+    
+   
+    
 }
+

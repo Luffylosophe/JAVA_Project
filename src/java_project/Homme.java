@@ -32,21 +32,18 @@ public abstract class Homme extends Personne {
     Boolean isBeautiful;
     Boolean isFunny; 
     int id; // un moyen de faire une recherche, ou s'authentifier 
-    String[] stage1Phrases;
-    String[] stage2Phrases;
-    String[] stage3Phrases;
-    String[] stage4Phrases;
+    String[] humanSentences;
+    String[] answers;
+
     
     
     //__________________________________________________________________
     //constructeur avec parametre
-    public Homme ( String[] stage1Phrases , String[]  stage2Phrases ,String[]  stage3Phrases , String[] stage4Phrases )
-    {
-        stage1Phrases = new String[8];
-        stage2Phrases = new String[8];
-        stage3Phrases = new String[8];
-        stage4Phrases = new String[8];
+    public Homme () {
+        
     }
+    
+    
             
            
     
@@ -127,63 +124,70 @@ public abstract class Homme extends Personne {
        
     } // pas utilisé */
     
-    public void settingStage1(String[] stage1Phrases) {
-        stage1Phrases[0] = "Hé mademoiselle t'es charmante, t'a un 06 ?";
-        stage1Phrases[0] = "";
-        stage1Phrases[0] = "";
+    public void createSentences ( String[] humanSentences )
+    {
+        humanSentences = new String[9];
+    }
+    
+    public void settingStage1(String[] humanSentences) {
+        humanSentences[0] = "Hé mademoiselle t'es charmante, t'a un 06 ? ";
+        humanSentences[1] = "Bonsoir mademoiselle,je vous trouve belle, quelle est votre nom ? ";
+        humanSentences[2] = " /Vous la sifflez de loin/  ";
         
-        stage1Phrases[0] = "";
-        stage1Phrases[0] = "";
-        stage1Phrases[0] = "";
+        humanSentences[3] = " C'est le nom de ma Grand-mère ";
+        humanSentences[4] = " C'est combien pour coucher avec vous ? ";
+        humanSentences[5] = " Moi c'est ravi de vous rencontrer ";
         
-        stage1Phrases[0] = "";
-        stage1Phrases[0] = "";
-        stage1Phrases[0] = "";
+        humanSentences[6] = " Tu as un numéro de téléphone qu'on puisse s'appeler ? ";
+        humanSentences[7] = " Je connais un bon kebab dans le coin on y va ?  ";
+        humanSentences[8] = " Félicitations tu as l'honneur d'etre ma 100ème conquête ";
             
        
     
     }
     
-    public void settingStage2(String[] stage2Phrases) {
-        stage2Phrases[0] = "";
-        stage2Phrases[0] = "";
-        stage2Phrases[0] = "";
+    public void settingStage2(String[] humanSentences) {
+        humanSentences[0] = "(1) Oui Allo, alors comment était ta journée ";
+        humanSentences[1] = "(2) Oui allo, désolé mais qui est ce déjà ? ";
+        humanSentences[2] = "(3) Ouais salut, je te rappelle j'ai une amie qui m'appelle la ";
         
-        stage2Phrases[0] = "";
-        stage2Phrases[0] = "";
-        stage2Phrases[0] = "";
+        humanSentences[3] = "(1)	Wow meuf, j'ai vu de ces fessiers auj au centre commercial ";
+        humanSentences[4] = "(2)	Je suis allé bosser aujourd'hui, et fais quelques courses.";
+        humanSentences[5] = "(3)	Oh tu sais rein de ouf, fumé tranquille chez moi au lit, jeux vidéos";
         
-        stage2Phrases[0] = "";
-        stage2Phrases[0] = "";
-        stage2Phrases[0] = "";
-        
-       
-    
-    }
-    
-    public void settingStage3(String[] stage3Phrases) {
-        
-        stage3Phrases[0] = "";
-        stage3Phrases[0] = "";
-        stage3Phrases[0] = "";
-        
-        stage3Phrases[0] = "";
-        stage3Phrases[0] = "";
-        stage3Phrases[0] = "";
-        
-        stage3Phrases[0] = "";
-        stage3Phrases[0] = "";
-        stage3Phrases[0] = "";
+        humanSentences[6] = "(1) T'es plutôt ennuyante au téléphone, tu veux pas qu'on se voit plutôt ?";
+        humanSentences[7] = "(2)'Tain ta voix me rappelle celle de mon grand père, bien grave. C'es chaud ";
+        humanSentences[8] = "(3)	J'aime bien t'entendre et discuter avec toi, j'espere te voir bientot.";
         
        
     
     }
     
-    public void settingStage4(String[] stage4Phrases) {
+    public void settingStage3(String[] humanSentences) {
+        
+        humanSentences[0] = " La météo a chuté tu trouves pas ? ";
+        humanSentences[1] = " T'es magnifique, tu as déjà songé à être une youtubeuse beauté ? ";
+        humanSentences[2] = " Je préfère te prévenir, je ne paierai pas ton addition ";
+        
+        humanSentences[3] = " Ne mange pas trop, après le resto je vais t'emmener à l'hotêl faire des acrobaties haha ";
+        humanSentences[4] = " Il doit surement être incroyable, oui vas-y tu peux gouter mon plat ";
+        humanSentences[5] = " Je t'en commande un si tu veux ? ";
+        
+        humanSentences[6] = " Je trouve qu'on a beaucoup de point commun, je suis vraiment content de t'avoir croisé dans cette rue ";
+        humanSentences[7] = " Bon on va à l'hôtel maintenant ? ";
+        humanSentences[8] = " Ton père est un voleur il a pris toutes les étoi...";
         
        
     
     }
+    
+    public void settingStage4(String[] humanSentences) {
+        
+       
+    
+    }
+    
+    /*
     
     @Override
     public String presentation(){

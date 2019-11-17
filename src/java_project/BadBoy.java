@@ -11,4 +11,8 @@ package java_project;
  */
 public class BadBoy extends Homme {
     
+    public BadBoy(String[] sentences) {
+        super(sentences);
+    }
+    
 }

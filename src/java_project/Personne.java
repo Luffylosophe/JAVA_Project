@@ -18,6 +18,7 @@ public class Personne {
   protected String preferences;
   protected String interest;
   int attempts;
+  private String position;
   
    public Personne(){
         System.out.println("Nouvelle personne");
@@ -36,11 +37,17 @@ public class Personne {
         
     }
 
- 
-    
-    // Getter et Setter __________________________________________________________
+     // Getter et Setter __________________________________________________________
+    public String getPosition() {
+        return position;
+    }
 
-    public String getNom() {
+  
+    public void setPosition(String position) {
+        this.position = position;
+    }
+
+    public String getName() {
         return name;
     }
     public String getPreference() {
@@ -54,7 +61,7 @@ public class Personne {
         return interest;
     }
 
-    public String getPrenom() {
+    public String getfirstName() {
         return firstName;
     }
 
@@ -70,7 +77,7 @@ public class Personne {
         return attempts;
     }
 
-    public void setNom(String name) {
+    public void setName(String name) {
         this.name = name;
     }
     
@@ -78,7 +85,7 @@ public class Personne {
         this.preferences = preference;
     }
 
-    public void setPrenom(String prenom) {
+    public void setFirstName(String prenom) {
         this.firstName = prenom;
     }
 

@@ -31,6 +31,19 @@ public abstract class Femme extends Personne {
     boolean isClean;
     boolean isFeminist;
     boolean isVegan;
+    String[] answers;
+    
+    public Femme () {
+        
+    }
+    
+    public Femme ( String[] answers )
+    {
+        answers = new String[8];
+    }
+    
+    
+    
 
     public boolean isIsCooker() {
         return isCooker;
@@ -77,6 +90,62 @@ public abstract class Femme extends Personne {
         return super.presentation()+"\nEn cuisine je dirais que je me situe plutot a "+this.isCooker+"/100";
         //return phr;
     }
+     
+     public void settingAnswer1(String[] answers) {
+         
+        answers[0] = "Ce n'est pas une façon de parler à une femme ";
+        answers[1] = " Heu..Bonsoir je m'appele"+"enchantée";
+        answers[2] = " /Elle se met à marcher vite dans le sens contraire à vous/ ";
+        
+        answers[3] = " Ah, c'est une information très utile... ";
+        answers[4] = " Qu'est ce que ?! ";
+        answers[5] = " Ravie, bon je dois rentrer chez moi, merci du compliment ! ";
+        
+        answers[6] = " Je veux bien te le donner, ton approche a été sympathique ";
+        answers[7] = " Non je dois vraiment rentrer chez moi  ";
+        answers[8] = " Félicitations, tu dormira encore vierge ce soir ";
+         
+     }
+     
+     public void settingAnswer2(String[] answers) {
+         
+        answers[0] = "(1) Oui Allo, alors comment était ta journée ";
+        answers[1] = "(2) Oui allo, désolé mais qui est ce déjà ? ";
+        answers[2] = "(3) Ouais salut, je te rappelle j'ai une amie qui m'appelle la ";
+        
+        answers[3] = "(1)	Wow meuf, j'ai vu de ces fessiers auj au centre commercial ";
+        answers[4] = "(2)	Je suis allé bosser aujourd'hui, et fais quelques courses.";
+        answers[5] = "(3)	Oh tu sais rein de ouf, fumé tranquille chez moi au lit, jeux vidéos";
+        
+        answers[6] = "(1) T'es plutôt ennuyante au téléphone, tu veux pas qu'on se voit plutôt ?";
+        answers[7] = "(2)'Tain ta voix me rappelle celle de mon grand père, bien grave. C'es chaud ";
+        answers[8] = "(3)	J'aime bien t'entendre et discuter avec toi, j'espere te voir bientot.";
+         
+     }
+     
+     public void settingAnswer3(String[] answers) {
+        
+        answers[0] = " Oui. ";
+        answers[1] = " Hahaha, non j'ose pas.. Je préfère regarder des chaines comme Luffylosophe, tu devrais t'abonner c'est mon youtubeur préféré ";
+        answers[2] = " Je n'avais pas prévu que tu payes à ma place. ";
+        
+        answers[3] = " Je pense que tu as vraiment un problème avec les femmes ";
+        answers[4] = " hmmmm j'aurai du commander celui-là \n\n La soirée continue et vous vous amusez bien ";
+        answers[5] = " Je t'en commande un si tu veux ? ";
+        
+        answers[6] = " Je trouve qu'on a beaucoup de point commun, je suis vraiment content de t'avoir croisé dans cette rue ";
+        answers[7] = " Tu vas y aller tout seul. ";
+        answers[8] = " Mon père est mort... \n\n\n non je rigole relax ";
+        
+    }
+     
+     public void settingStage4(String[] sentences) {
+        
+       
+    
+    }
+     
+
     
     public void ecriture(String nom, String prenom, int age,int isCooker, String preference, String interet) throws IOException{
                //ecriture dans un fichiers txt. reflechir comment mettre en parametre apre juste l'objet, pour avoir un truc global

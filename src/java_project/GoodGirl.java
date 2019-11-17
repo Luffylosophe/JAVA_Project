@@ -11,4 +11,8 @@ package java_project;
  */
 public class GoodGirl extends Femme {
     
+    public GoodGirl(String[] answers) {
+        super(answers);
+    }
+    
 }
