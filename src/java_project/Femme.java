@@ -42,11 +42,20 @@ public abstract class Femme extends Personne {
     {
         answers = new String[8];
     }
+
+    public boolean getIsWellDressed() {
+        return isWellDressed;
+    }
+
+    public void setIsWellDressed(boolean isWellDressed) {
+        this.isWellDressed = isWellDressed;
+    }
+    
     
     
     
 
-    public boolean isIsCooker() {
+    public boolean getIsCooker() {
         return isCooker;
     }
 
@@ -54,7 +63,7 @@ public abstract class Femme extends Personne {
         this.isCooker = isCooker;
     }
 
-    public boolean isIsPretty() {
+    public boolean getIsPretty() {
         return isPretty;
     }
 
@@ -62,7 +71,7 @@ public abstract class Femme extends Personne {
         this.isPretty = isPretty;
     }
 
-    public boolean isIsClean() {
+    public boolean getIsClean() {
         return isClean;
     }
 
@@ -70,7 +79,7 @@ public abstract class Femme extends Personne {
         this.isClean = isClean;
     }
 
-    public boolean isIsFeminist() {
+    public boolean getIsFeminist() {
         return isFeminist;
     }
 
@@ -78,7 +87,7 @@ public abstract class Femme extends Personne {
         this.isFeminist = isFeminist;
     }
 
-    public boolean isIsVegan() {
+    public boolean getIsVegan() {
         return isVegan;
     }
 
