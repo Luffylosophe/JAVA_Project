@@ -25,13 +25,7 @@ import java.util.ArrayList;
  * @author adala
  */
 public abstract class Homme extends Personne {
-    Boolean isCharismatic;
-    Boolean isMuscled;
-    Boolean  isFat;
-    Boolean drivingLicense ;
-    Boolean isBeautiful;
-    Boolean isFunny; 
-    int id; // un moyen de faire une recherche, ou s'authentifier 
+    Boolean isCharismatic, isMuscled, isFat, drivingLicense, isFunny, isBeautiful;
     String[] humanSentences;
     String[] answers;
 
@@ -42,14 +36,10 @@ public abstract class Homme extends Personne {
     
     //__________________________________________________________________
     //constructeur avec parametre
-    public Homme () {
-        
-    }
-    
+
     
             
-           
-    
+ 
 
     public Boolean getIsCharismatic() {
         return isCharismatic;
@@ -99,13 +89,6 @@ public abstract class Homme extends Personne {
         this.isFunny = isFunny;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
 
     //____________________________________________________________________________
@@ -127,6 +110,7 @@ public abstract class Homme extends Personne {
        
     } // pas utilisé */
     
+    
     public void createSentences ( String[] humanSentences )
     {
         humanSentences = new String[9];
@@ -135,7 +119,7 @@ public abstract class Homme extends Personne {
     public void settingStage1(String[] humanSentences) {
         humanSentences[0] = "Hé mademoiselle t'es charmante, t'a un 06 ? ";
         humanSentences[1] = "Bonsoir mademoiselle,je vous trouve belle, quelle est votre nom ? ";
-        humanSentences[2] = " /Vous la sifflez de loin/  ";
+        humanSentences[2] = " (action) /Vous la sifflez de loin/  ";
         
         humanSentences[3] = " C'est le nom de ma Grand-mère ";
         humanSentences[4] = " C'est combien pour coucher avec vous ? ";
@@ -149,7 +133,6 @@ public abstract class Homme extends Personne {
     
     }
     
-<<<<<<< HEAD
     public void settingStage2(String[] humanSentences) {
         humanSentences[0] = "(1) Oui Allo, alors comment était ta journée ";
         humanSentences[1] = "(2) Oui allo, désolé mais qui est ce déjà ? ";
@@ -162,24 +145,8 @@ public abstract class Homme extends Personne {
         humanSentences[6] = "(1) T'es plutôt ennuyante au téléphone, tu veux pas qu'on se voit plutôt ?";
         humanSentences[7] = "(2)'Tain ta voix me rappelle celle de mon grand père, bien grave. C'es chaud ";
         humanSentences[8] = "(3)	J'aime bien t'entendre et discuter avec toi, j'espere te voir bientot.";
-=======
-    public void settingStage2(String[] stage2Phrases) {
-        stage2Phrases[0] = "(1) Oui Allo, alors comment était ta journée ";
-        stage2Phrases[1] = "(2)	Oui allo, désolé mais qui est ce déjà ? ";
-        stage2Phrases[2] = "(3)	Ouais salut, je te rappelle j'ai une amie qui m'appelle la ";
-        
-        stage2Phrases[3] = "(1)	Wow meuf, j'ai vu de ces fessiers auj au centre commercial ";
-        stage2Phrases[4] = "(2)	Je suis allé bosser aujourd'hui, et fais quelques courses.";
-        stage2Phrases[5] = "(3)	Oh tu sais rein de ouf, fumé tranquille chez moi au lit, jeux vidéos";
-        
-        stage2Phrases[6] = "(1)T'es plutôt ennuyante au téléphone, tu veux pas qu'on se voit plutôt ?";
-        stage2Phrases[7] = "(2)'Tain ta voix me rappelle celle de mon grand père, bien grave. C'es chaud";
-        stage2Phrases[8] = "(3)	J'aime bien t'entendre et discuter avec toi, j'espere te voir bientot.";
->>>>>>> prototype
-        
-       
-    
     }
+      
     
     public void settingStage3(String[] humanSentences) {
         

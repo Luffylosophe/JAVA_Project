@@ -26,6 +26,7 @@ import java.util.logging.Logger;
  */
 public abstract class Femme extends Personne {
     
+    boolean isWellDressed;
     boolean isCooker;
     boolean isPretty;
     boolean isClean;

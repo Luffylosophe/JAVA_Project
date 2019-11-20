@@ -15,10 +15,11 @@ public class Personne {
   protected String firstName;
   protected int age;
   int satisfaction;
-  protected String preferences;
   protected String interest;
   int attempts;
   private String position;
+  protected String[] personality;
+  protected String[] preferences; 
   
    public Personne(){
         System.out.println("Nouvelle personne");
@@ -32,7 +33,6 @@ public class Personne {
         this.name = name;
         this.firstName = firstName;
         this.age = age;
-        this.preferences = preferences;
         this.interest = interest;
         
     }
@@ -50,14 +50,12 @@ public class Personne {
     public String getName() {
         return name;
     }
-    public String getPreference() {
-        return preferences;
-    }
-       public void setInteret(String interet) {
+    
+       public void setInterest(String interet) {
         this.interest = interet;
     }
 
-    public String getInteret() {
+    public String getInterest() {
         return interest;
     }
 
@@ -81,9 +79,7 @@ public class Personne {
         this.name = name;
     }
     
-     public void setPreference(String preference) {
-        this.preferences = preference;
-    }
+     
 
     public void setFirstName(String prenom) {
         this.firstName = prenom;
@@ -99,6 +95,10 @@ public class Personne {
 
     public void setAttempts(int attempts) {
         this.attempts = attempts;
+    }
+    
+    public void createPersonality( String[] personality  ) {
+        personality = new String[6] ;
     }
     //____________________________________________________________________
     
